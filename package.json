@@ -1,0 +1,40 @@
+{
+  "name": "banned-import-paths-tslint-rule",
+  "version": "1.0.0",
+  "description": "Disallow certain paths in your typescript import statements",
+  "main": "bannedImportPathsRule.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tslint test/*.ts --format stylish",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "*Rule.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githendrik/banned-import-paths-tslint-rule.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "tslint",
+    "banned",
+    "imports",
+    "disallow",
+    "forbid",
+    "folder"
+  ],
+  "author": "Hendrik Richert <hendrik@richert.li>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/githendrik/banned-import-paths-tslint-rule/issues"
+  },
+  "homepage": "https://github.com/githendrik/banned-import-paths-tslint-rule#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.20",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  }
+}

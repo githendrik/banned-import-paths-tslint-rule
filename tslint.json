@@ -1,0 +1,10 @@
+{
+  "rulesDirectory": "./",
+  "rules": {
+    "banned-import-paths": [
+      true,
+      ["my/banned/path", "We don't want that.", ".spec.ts|.foo.ts"],
+      ["other/banned/path", "We don't want that either"]
+    ]
+  }
+}
