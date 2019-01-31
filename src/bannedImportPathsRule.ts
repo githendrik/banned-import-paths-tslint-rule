@@ -44,7 +44,7 @@ class BannedImportPathsWalker extends RuleWalker {
         options.forEach(
             ([bannedPath, reasonMessage, exemptions]: [string, string, string]) => {
                 if (importPath.indexOf(bannedPath) > -1) {
-                    const errorStartPos = node.getText().indexOf(bannedPath);
+                    const errorStartPos = parentFile.getFullText().indexOf(bannedPath);
                     const errorEndPos = errorStartPos + bannedPath.length;
 
                     if (!isExcluded(parentFile.fileName, exemptions)) {
